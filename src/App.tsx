@@ -1,15 +1,17 @@
 /* eslint-disable @typescript-eslint/no-shadow */
-import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Search from './pages/Search';
+import Home from './pages/Home';
+import SearchProvider from './context/SearchProvider';
 
 function App() {
   return (
-    <main>
-      <Routes>
-        <Route path="/search" element={ <Search /> } />
-      </Routes>
-    </main>
+    <SearchProvider>
+      <main>
+        <Routes>
+          <Route path="/" element={ <Home /> } />
+        </Routes>
+      </main>
+    </SearchProvider>
   );
 }
 

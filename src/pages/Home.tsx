@@ -1,12 +1,10 @@
 import SearchBar from '../components/SearchBar';
-import SearchButton from '../components/SearchButton';
 
 function Search() {
   return (
     <div>
-      <h1>Search</h1>
+      <h1>Home</h1>
       <SearchBar />
-      <SearchButton />
     </div>
   );
 }
